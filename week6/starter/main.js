@@ -55,6 +55,19 @@ function addProduct(item){
 
 
 // 7. Remove a Product from the Cart by index
+function removeProductByIndex(index) {
+    cartItems.splice(index, 1);
+    displayCartItems();
+}
 
 
 // 8. Remove a Product from the Cart using filter()
+function removeProductByName(Product){
+    cartItems = cart.filter(item => item !== product);
+    displayCartItems();
+ 
+}
+
+//logic
+addToCart('Montreal');
+addToCart('Ottawa')
